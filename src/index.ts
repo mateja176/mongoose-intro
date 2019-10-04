@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema<User>({
 const UserModel = mongoose.model<User & mongoose.Document>('User', UserSchema);
 
 mongoose
-  .connect('mongodb://localhost:27017/test', {
+  .connect('mongodb://localhost:27017/mongoose-intro', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
